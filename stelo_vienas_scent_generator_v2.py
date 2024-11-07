@@ -35,13 +35,13 @@ def generate_scent_profile(character_class, selected_notes):
 # Set up page configuration with a custom title and icon
 st.set_page_config(page_title="Stelo Vienas Scent Generator v2", page_icon="✨")
 
-# Custom CSS for a styled background and elements
+# Custom CSS for styling, including dark-mode-compatible text color
 st.markdown("""
     <style>
     /* Background color for app */
     .main { background-color: #f7f1e3; color: #333; }
-    /* Styling for the final reveal box */
-    .reveal-box { border: 2px solid #b47e5f; padding: 20px; margin-top: 20px; background-color: #fbf3e3; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
+    /* Styling for the final reveal box with readable text in Dark Mode */
+    .reveal-box { border: 2px solid #b47e5f; padding: 20px; margin-top: 20px; background-color: #fbf3e3; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); color: #333; }
     /* Font styling */
     h1, h2, h3 { color: #5b2c6f; font-family: 'Georgia', serif; }
     /* Option styling */
